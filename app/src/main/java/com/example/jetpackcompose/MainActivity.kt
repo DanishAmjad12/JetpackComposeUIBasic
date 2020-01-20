@@ -30,6 +30,7 @@ fun ComposableFunction(name: String) {
     Text(text = "$name!")
 }
 
+//text with style color
 @Composable
 fun textWithColor()
 {
