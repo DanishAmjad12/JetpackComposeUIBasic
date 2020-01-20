@@ -65,3 +65,12 @@ fun styleOnText()
 
 }
 ```
+# Text With Style Color
+```
+@Composable
+fun textWithColor()
+{
+    Text("Text with color", style = TextStyle(color = Color.Red))
+
+}
+```
