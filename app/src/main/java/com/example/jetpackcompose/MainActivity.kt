@@ -4,35 +4,37 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.Composable
 import androidx.compose.unaryPlus
-import androidx.ui.core.Draw
 import androidx.ui.core.Text
 import androidx.ui.core.dp
 import androidx.ui.core.setContent
-import androidx.ui.engine.geometry.Offset
 import androidx.ui.graphics.Color
-import androidx.ui.graphics.Image
-import androidx.ui.graphics.Paint
 import androidx.ui.layout.*
 import androidx.ui.material.Button
-import androidx.ui.material.ContainedButtonStyle
 import androidx.ui.material.MaterialTheme
 import androidx.ui.material.withOpacity
-import androidx.ui.res.imageResource
-import androidx.ui.text.style.TextOverflow
+import androidx.ui.text.TextStyle
 import androidx.ui.tooling.preview.Preview
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            styleOnText()
+            textWithColor()
         }
     }
 }
 
+//composable function
 @Composable
 fun ComposableFunction(name: String) {
     Text(text = "$name!")
+}
+
+@Composable
+fun textWithColor()
+{
+    Text("Text with color", style = TextStyle(color = Color.Red))
+
 }
 
 @Composable
@@ -41,6 +43,7 @@ fun addButton() {
         Button(
             text = "I'm a Compose Button"
         )
+
     }
 }
 
@@ -62,5 +65,5 @@ fun styleOnText()
 @Preview
 @Composable
 fun Preview() {
-    styleOnText()
+    textWithColor()
 }
