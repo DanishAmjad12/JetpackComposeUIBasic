@@ -13,14 +13,14 @@ In this sample project I explored some basics UI things.
 * How to add a style on text
 
 # How to define a Text Element in Your Layout File:
-```
+```Kotlin
 setContent {
     Text("Hello Text")
 }
 ```
 
 # How to Add a Composable Function:
- ```
+ ```Kotlin
  @Composable
 fun ComposableFunction(name: String) {
     Text(text = "$name!")
@@ -28,7 +28,7 @@ fun ComposableFunction(name: String) {
 ```
 
 # How to Preview Your Composable Functions:
-```
+```Kotlin
 @Preview
 @Composable
 fun Preview() {
@@ -37,7 +37,7 @@ fun Preview() {
 ```
 
 # How to add a Button:
-```
+```Kotlin
 @Composable
 fun addButton() {
     Container(width = 300.dp, height = 100.dp) {
@@ -49,7 +49,7 @@ fun addButton() {
 ```
 
 # Add a Style on Text:
-```
+```Kotlin
 @Composable
 fun styleOnText()
 {
@@ -66,7 +66,7 @@ fun styleOnText()
 }
 ```
 # Text With Style Color
-```
+```Kotlin
 @Composable
 fun textWithColor()
 {
