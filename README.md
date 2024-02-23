@@ -12,14 +12,15 @@ In this sample project I explored some basics UI things.
 * How to add a button
 * How to add a style on text
 
-# How to define a Text Element in Your Layout File:
+# Define a Text Element in Your Layout File:
 ```Kotlin
 setContent {
     Text("Hello Text")
 }
 ```
 
-# How to Add a Composable Function:
+# Add a Composable Function:
+We just need to add a @Composable annotation
  ```Kotlin
  @Composable
 fun ComposableFunction(name: String) {
@@ -27,7 +28,8 @@ fun ComposableFunction(name: String) {
 }
 ```
 
-# How to Preview Your Composable Functions:
+# Preview Your Composable Functions:
+You just need to add a @Preview annotation
 ```Kotlin
 @Preview
 @Composable
@@ -36,7 +38,7 @@ fun Preview() {
 }
 ```
 
-# How to add a Button:
+# Add a Button:
 ```Kotlin
 @Composable
 fun addButton() {
